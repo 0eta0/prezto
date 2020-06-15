@@ -45,3 +45,7 @@ zle -N peco-history-selection
 bindkey '^R' peco-history-selection
 
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+# if (which zprof > /dev/null 2>&1) ;then
+#   zprof
+# fi
