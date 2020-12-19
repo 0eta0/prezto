@@ -73,3 +73,6 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 alias g='git'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# anyenv
+[ -f ~/.anyenv/bin/anyenv ] && eval "$(anyenv init - zsh)"
