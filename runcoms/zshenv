@@ -12,6 +12,3 @@ fi
 
 # zmodload zsh/zprof && zprof
 source "$HOME/.cargo/env"
-
-# anyenv
-export PATH="$HOME/.anyenv/bin:$PATH"
