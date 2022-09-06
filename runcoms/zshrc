@@ -86,6 +86,8 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 # alias
 alias g='git'
+alias rem='reminders'
+alias todo='rem show todo'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
