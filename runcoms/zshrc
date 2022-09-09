@@ -15,7 +15,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
 if [ -f ~/.zprofile ]; then source ~/.zprofile; fi
+
+# brew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # cdr
 if [[ -n $(echo ${^fpath}/chpwd_recent_dirs(N)) && -n $(echo ${^fpath}/cdr(N)) ]]; then
@@ -98,4 +102,4 @@ if [ -f '~/google-cloud-sdk/path.zsh.inc' ]; then . '~/google-cloud-sdk/path.zsh
 if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/completion.zsh.inc'; fi
 
 # asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
