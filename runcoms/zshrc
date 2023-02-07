@@ -103,3 +103,7 @@ if [ -f '~/google-cloud-sdk/completion.zsh.inc' ]; then . '~/google-cloud-sdk/co
 
 # asdf
 . $(brew --prefix asdf)/libexec/asdf.sh
+
+export ASDFINSTALLS=$HOME/.asdf/installs
+GOV=$(asdf current golang | awk '{print $2}')
+export PATH=$PATH:$ASDFINSTALLS/golang/$GOV/packages/bin
