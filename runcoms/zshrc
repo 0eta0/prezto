@@ -109,3 +109,6 @@ GOV=$(asdf current golang | awk '{print $2}')
 export PATH=$PATH:$ASDFINSTALLS/golang/$GOV/packages/bin
 
 export PATH=$PATH:$HOME/.mint/bin
+
+# Flutter
+export PATH="$PATH":"$HOME/.pub-cache/bin"
