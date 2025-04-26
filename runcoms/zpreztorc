@@ -41,6 +41,7 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'git' \
   'syntax-highlighting' \
+  'autosuggestions' \
   'prompt' \
 
 #
@@ -205,7 +206,7 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #   'line' \
 #   'cursor' \
 #   'root'
-#
+
 # Set syntax highlighting styles.
 # zstyle ':prezto:module:syntax-highlighting' styles \
 #   'builtin' 'bg=blue' \
