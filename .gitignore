@@ -2,3 +2,4 @@
 *.zwc.old
 modules/*
 contrib
+.zsh_history
