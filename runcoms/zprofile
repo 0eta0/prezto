@@ -71,3 +71,25 @@ fi
 if [[ -z "$LESSOPEN" ]] && (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
+
+
+export CLICOLOR=1
+export LSCOLORS=DxGxcxdxCxegedabagacad
+
+PROMPT="%F{yellow}>%f "
+RPROMPT=""
+
+export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
+export NODEBREW_ROOT=/usr/local/var/nodebrew
+export PATH=$NODEBREW_ROOT/current/bin:$PATH
+export PATH=$HOME/esp/xtensa-esp32-elf/bin:$PATH
+export IDF_PATH=~/esp/esp-idf
+
+export LDFLAGS="-L/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl/include"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+
+autoload -U compinit
+compinit
