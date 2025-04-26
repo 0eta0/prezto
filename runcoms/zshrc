@@ -112,3 +112,5 @@ export PATH=$PATH:$HOME/.mint/bin
 
 # Flutter
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+eval "$(direnv hook zsh)"
